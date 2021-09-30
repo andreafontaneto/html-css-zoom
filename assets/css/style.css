@@ -50,6 +50,7 @@ main{
   justify-content: center;
   flex-wrap: wrap;
   overflow: auto;
+  padding-top: 50px;
 }
 
 .box-image{
