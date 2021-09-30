@@ -6,6 +6,7 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   color: white;
 }
 
@@ -14,10 +15,13 @@ HEADER
 ------------------------------*/
 
 header{
+  width: 100vw;
   display: flex;
   justify-content: flex-end;
   padding: 10px;
   background-color: black;
+  position: fixed;
+  z-index: 999;
 }
 
 .box{
@@ -39,8 +43,26 @@ MAIN
 ------------------------------*/
 
 main{
-  height: calc(100vh - 40px - 80px);
-  background-color: cornflowerblue;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.box-image{
+  position: relative;
+  margin: 5px;
+}
+
+.user-info{
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 124px;
+  left: 0;
 }
 
 /*------------------------------
@@ -48,6 +70,61 @@ FOOTER
 ------------------------------*/
 
 footer{
-  height: 80px;
-  background-color: darkslategrey;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1A1A1A;
+  position: fixed;
+  bottom: 0;
+}
+
+.content-left, .content-center, .content-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer left */
+
+.content-left ul, .content-center ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.content-left ul li, .content-center ul li{
+  text-align: center;
+  margin: 10px 25px;
+  cursor: pointer;
+}
+
+.content-left ul li i, .content-center ul li i{
+  font-size: 30px;
+}
+
+.content-left ul li p, .content-center ul li p{
+  padding: 10px 0;
+}
+
+/* footer center */
+
+.content-center{
+  width: 80%;
+}
+
+.active{
+  color: #45C01B;
+}
+
+/* footer right */
+
+.content-right{
+  text-align: center;
+  background-color: #393939;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.content-right p{
+  color: red;
 }
