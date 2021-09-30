@@ -6,6 +6,7 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 /*------------------------------
@@ -13,8 +14,24 @@ HEADER
 ------------------------------*/
 
 header{
-  height: 40px;
-  background-color: cadetblue;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: black;
+}
+
+.box{
+  background-color: grey;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.box.screenview{
+  margin-right: 10px;
+}
+
+.box.expand{
+  margin-right: -5px;
 }
 
 /*------------------------------
